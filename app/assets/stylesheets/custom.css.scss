@@ -1,18 +1,109 @@
-$navbar-default-bg: #6700C3;
+$navbar-default-bg: black;
+
 
 @import "bootstrap";
 
 
+
 #logo {
-  float: left;
-  font-size: 1.7em;
-  color: #6700C3;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  font-weight: bold;
+
+float: left;
+
+font-size: 1.7em;
+
+color: #9900cc;
+
+text-transform: uppercase;
+
+letter-spacing: -1px;
+
+font-weight: bold;
+
 }
 
 #logo:hover {
-  color: #00C303;
-  text-decoration: none;
+
+color: #33cc33;
+
+text-decoration: none;
+
 }
+
+.center {
+
+text-align: center;
+
+}
+
+.jumbotron {
+
+background-image: asset-url('galaxy.jpg');
+
+background-size: cover;
+
+height: 550px;
+
+}
+
+.jumbotron h1 {
+
+color: #fff;
+
+text-align: center;
+
+margin-bottom: 30px;
+
+letter-spacing: -1px;
+
+font-weight: bold;
+
+}
+
+.btn-xlarge {
+
+font-size: 1.7em;
+
+background-color: black;
+
+}
+
+footer {
+
+margin-top: 45px;
+
+padding-top: 5px;
+
+border-top: 1px solid #eaeaea;
+
+color: #777;
+
+}
+
+footer a:hover {
+
+color: #222;
+
+}
+
+footer small {
+
+float: left;
+
+}
+
+footer ul {
+
+float: right;
+
+list-style: none;
+
+}
+
+footer ul li {
+
+float: left;
+
+margin-left: 15px;
+
+}
+
