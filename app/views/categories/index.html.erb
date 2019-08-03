@@ -1,0 +1,17 @@
+<h1 align="center">Listing all categories</h1> <%= link_to "Create Category", new_category_path %>
+<div align="center">
+	<%= will_paginate %>
+	<% @categories.each do |category| %>
+		<ul class="listing">
+			<div class="row">
+				<div class ="center card card-body bg-light">
+					<li class="article-titel">
+						<%= link_to "#{category.name}", category_path(category) %>
+					</li>
+				</div>
+			</div>
+		</ul>	 
+
+	<% end %>
+	<%= will_paginate %>
+</div>
