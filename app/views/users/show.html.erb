@@ -5,6 +5,12 @@
 	</div>
 </div>
 <h4 align="center"><%= @user.username %>'s articles</h4>
+<% if logged_in? and current_user.username? %>
+<div class="center">
+	<%= link_to "Delete this user", user_path(@user), method: :delete, data: { confirm: "Are you sure you want to delete the user and all their articles" }, class: "btn btn-xs btn-sm btn-danger" %>
+</div>
+<% end %>
+
 <div class="center">
 	<%= will_paginate @user_articles, class: "pagination"  %>
 </div>

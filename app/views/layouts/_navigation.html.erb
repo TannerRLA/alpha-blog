@@ -17,11 +17,11 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <%= link_to "New Article", new_article_path, class: "dropdown-item"%>
-            <a class="dropdown-item" href="#">Another action</a>
+           <!-- <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
-        </li>
+        </li> -->
       <% end %>
       <% if logged_in? %>
         <li class="nav-item">
@@ -70,7 +70,7 @@
           <div class="dropdown-menu nav-item" aria-labelledby="navbarDropdown">
             <%= link_to "Edit your profile", edit_user_path(current_user), class: "dropdown-item" %>
             <%= link_to "View your profile", user_path(current_user), class: "dropdown-item" %>
-            <a class="dropdown-item" href="#">Something else here</a>
+            
           </div>
         </li>
       </ul>
